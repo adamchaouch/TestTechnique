@@ -1,0 +1,26 @@
+
+
+
+
+<div class="container">
+    <!-- <mat-spinner *ngIf="emps.length === 0"></mat-spinner>-->
+
+    <mat-card  *ngFor="let emp of persons" style="margin-top:10px;">
+        <mat-card-header>
+            <mat-card-title>{{emp.name}}</mat-card-title>   
+        </mat-card-header>
+            <mat-card-content>
+            
+            </mat-card-content>
+        <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="showmore(emp)" > more details </button>
+      <button mat-raised-button  color="secondary" (click)="openDialog(emp)"> Edit </button>
+      <button mat-raised-button  color="warn"(click)="delete(emp)" > Delete </button>
+
+    </mat-card-actions>
+    
+
+   
+
+    </mat-card>
+</div>
